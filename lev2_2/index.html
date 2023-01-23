@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quality Check</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<form onsubmit="return false">
+			<label for="air-quality">AQI <span id="aqi"></span> </label>
+			<input oninput="checkAirQuality()""; type="range" name="air-quality"
+			id="air-quality" min="0" max="150" />
+			<p>Level of health concern: <span id="concern"></span></p>
+			<p>Level of health effect: <span id="effect"></span></p>
+		</form>
+
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
